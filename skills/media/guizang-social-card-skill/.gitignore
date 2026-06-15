@@ -1,0 +1,13 @@
+# Local test workspace — demos, screenshots, downloaded assets, debug scripts.
+# Skill iterates only on SKILL.md / references/ / assets/ / agents/ / validate.
+local-tests/
+
+# Node + macOS
+node_modules/
+.DS_Store
+*.log
+npm-debug.log*
+
+# Editor / OS
+.vscode/
+.idea/

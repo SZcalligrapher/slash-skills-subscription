@@ -1,0 +1,22 @@
+{
+  "name": "slash-media",
+  "version": "0.1.0",
+  "description": "Slash media skills for social cards, Xiaohongshu carousels, WeChat covers, and creator packaging workflows.",
+  "author": {
+    "name": "Slash"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Slash Media",
+    "shortDescription": "Social cards, Xiaohongshu images, and WeChat cover systems",
+    "category": "Creativity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Turn content into a polished social image package"
+    ]
+  }
+}

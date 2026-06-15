@@ -1,0 +1,32 @@
+{
+  "name": "slash-skills",
+  "interface": {
+    "displayName": "Slash Skills Subscription"
+  },
+  "plugins": [
+    {
+      "name": "slash-design",
+      "source": {
+        "source": "local",
+        "path": "./plugins/slash-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    },
+    {
+      "name": "slash-media",
+      "source": {
+        "source": "local",
+        "path": "./plugins/slash-media"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

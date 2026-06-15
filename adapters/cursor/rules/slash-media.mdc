@@ -1,0 +1,20 @@
+---
+description: Use Slash Media skills for social cards, Xiaohongshu/Rednote, WeChat covers, and creator packaging.
+globs:
+alwaysApply: false
+---
+
+# Slash Media
+
+Use this rule when the user asks for Xiaohongshu/Rednote images, social card sets, WeChat Official Account covers, article thumbnails, carousel posts, screenshot-heavy product posts, or creator packaging.
+
+Before acting, read the local Slash skill instructions if they are present in the project:
+
+- `.cursor/slash-skills/media/guizang-social-card-skill/SKILL.md`
+
+Follow the referenced skill workflow. In particular:
+
+- Treat the source content as a visual argument, not text to paste into posters.
+- Produce platform-sized image packages and verify rendered dimensions.
+- Preserve the skill's supporting files next to `SKILL.md` when copying this adapter into a Cursor project.
+

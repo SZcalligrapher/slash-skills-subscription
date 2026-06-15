@@ -1,0 +1,22 @@
+{
+  "name": "slash-design",
+  "version": "0.1.0",
+  "description": "Slash design skills for visual taste, presentation design, and design critique workflows.",
+  "author": {
+    "name": "Slash"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Slash Design",
+    "shortDescription": "Design taste, visual systems, and HTML slide decks",
+    "category": "Creativity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Create or improve a distinctive visual presentation"
+    ]
+  }
+}

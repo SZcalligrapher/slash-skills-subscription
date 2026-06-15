@@ -1,0 +1,8 @@
+interface:
+  display_name: "Guizang Social Card Skill"
+  short_description: "Create social card sets and WeChat covers."
+  brand_color: "#002FA7"
+  default_prompt: "Use $guizang-social-card-skill to turn this article into a 3:4 social card image set and a paired WeChat 21:9 + 1:1 cover."
+
+policy:
+  allow_implicit_invocation: true
