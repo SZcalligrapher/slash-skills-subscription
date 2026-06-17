@@ -21,13 +21,30 @@ scripts/            Maintenance helpers.
 
 ## Install In Codex
 
-From a published GitHub repository:
+Add the Slash Skills marketplace from GitHub:
 
 ```bash
-codex plugin marketplace add yourname/slash-skills-subscription --ref main
+codex plugin marketplace add SZcalligrapher/slash-skills-subscription --ref main
+```
+
+Then install the skill packs you want:
+
+```bash
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
 ```
+
+You can install only one pack if that is all you need:
+
+```bash
+codex plugin add slash-design@slash-skills
+```
+
+```bash
+codex plugin add slash-media@slash-skills
+```
+
+After installing, start a new Codex thread so the newly installed skills are loaded into context.
 
 For local MVP testing:
 
@@ -39,15 +56,71 @@ codex plugin add slash-media@slash-skills
 
 ## Update In Codex
 
-After new commits are pushed to GitHub:
+After new commits are pushed to GitHub, refresh the marketplace snapshot:
 
 ```bash
 codex plugin marketplace upgrade slash-skills
+```
+
+Then reinstall the packs you use:
+
+```bash
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
 ```
 
-Start a new thread after reinstalling so the updated skills are loaded.
+Start a new Codex thread after reinstalling so the updated skills are loaded.
+
+To refresh every Git marketplace configured in Codex, omit the marketplace name:
+
+```bash
+codex plugin marketplace upgrade
+```
+
+## Available Codex Packs
+
+### `slash-design`
+
+Design, visual systems, presentation craft, and HTML slide decks.
+
+Install:
+
+```bash
+codex plugin add slash-design@slash-skills
+```
+
+Included skills:
+
+- `frontend-slides`
+
+### `slash-media`
+
+Creator publishing workflows for social cards, Xiaohongshu/Rednote image sets, WeChat covers, and article thumbnails.
+
+Install:
+
+```bash
+codex plugin add slash-media@slash-skills
+```
+
+Included skills:
+
+- `guizang-social-card-skill`
+
+## Remove In Codex
+
+Remove an installed pack:
+
+```bash
+codex plugin remove slash-design
+codex plugin remove slash-media
+```
+
+Remove the marketplace source:
+
+```bash
+codex plugin marketplace remove slash-skills
+```
 
 ## Cursor Adapter
 
