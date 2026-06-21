@@ -77,6 +77,64 @@ To refresh every Git marketplace configured in Codex, omit the marketplace name:
 codex plugin marketplace upgrade
 ```
 
+## Verify The Subscription
+
+Run the built-in repository checks:
+
+```bash
+npm run validate
+```
+
+The validator checks:
+
+- `marketplace.json` has the required marketplace and plugin fields.
+- Every marketplace plugin points to an existing package under `plugins/`.
+- Codex and Claude manifests exist for each pack.
+- Source skills under `skills/` have `name` and `description` frontmatter.
+- Generated plugin skill copies are synced with their source skills.
+
+For an end-to-end Codex smoke test, install the GitHub marketplace into a clean Codex profile or a fresh machine:
+
+```bash
+codex plugin marketplace add SZcalligrapher/slash-skills-subscription --ref main
+codex plugin add slash-design@slash-skills
+codex plugin add slash-media@slash-skills
+```
+
+Then start a new Codex thread and ask for a skill by name, for example:
+
+```text
+Use $frontend-slides to create a 5-page presentation about my product launch.
+```
+
+```text
+Use $guizang-social-card-skill to turn this article into Xiaohongshu carousel images.
+```
+
+## Local Web Admin
+
+This repo includes a lightweight local management window for editing and validating the subscription:
+
+```bash
+npm run admin
+```
+
+Open:
+
+```text
+http://127.0.0.1:8787
+```
+
+The admin window can:
+
+- View all source skills and installable packs.
+- Edit source `SKILL.md` files.
+- Edit pack metadata for Codex and Claude manifests.
+- Save and sync source skills into `plugins/`.
+- Run the same validation checks used by `npm run validate`.
+
+This tool writes local repository files, so keep it on `127.0.0.1` and use it as a private maintenance interface.
+
 ## Available Codex Packs
 
 ### `slash-design`
