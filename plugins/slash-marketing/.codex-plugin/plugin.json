@@ -1,0 +1,22 @@
+{
+  "name": "slash-marketing",
+  "version": "0.1.0",
+  "description": "Slash marketing skills for product marketing, growth strategy, conversion optimization, SEO, ads, lifecycle, and go-to-market workflows.",
+  "author": {
+    "name": "Slash"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Slash Marketing",
+    "shortDescription": "Product marketing, growth, SEO, CRO, ads, lifecycle, and GTM skills",
+    "category": "Marketing",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Build a focused marketing plan or improve a growth workflow"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+---
+description: Use Slash Marketing skills for product marketing, growth, SEO, CRO, ads, lifecycle, and go-to-market work.
+globs:
+alwaysApply: false
+---
+
+# Slash Marketing
+
+Use this rule when the user asks for product marketing, positioning, customer research, copywriting, CRO, SEO, ads, launch planning, lifecycle email, pricing, onboarding, retention, referrals, sales enablement, or growth strategy.
+
+Before acting, read the local Slash skill instructions if they are present in the project. Start with product context when relevant:
+
+- `.cursor/slash-skills/marketing/product-marketing/SKILL.md`
+- `.cursor/slash-skills/marketing/marketing-plan/SKILL.md`
+- `.cursor/slash-skills/marketing/cro/SKILL.md`
+- `.cursor/slash-skills/marketing/copywriting/SKILL.md`
+- `.cursor/slash-skills/marketing/seo-audit/SKILL.md`
+- `.cursor/slash-skills/marketing/social/SKILL.md`
+
+Follow the referenced skill workflow and preserve each skill's supporting `references/` and `evals/` folders when copying this adapter into a Cursor project.

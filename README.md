@@ -4,10 +4,12 @@ Slash Skills Subscription is a cross-agent skill collection. The repository keep
 
 ## MVP Contents
 
-- `slash-design`: design, visual systems, and HTML slide decks.
-  - Includes `frontend-slides`.
-- `slash-media`: creator publishing workflows for social cards and cover systems.
-  - Includes `guizang-social-card-skill`.
+- `slash-design`: design, visual systems, animation review, and HTML slide decks.
+  - Includes `frontend-slides`, `emil-design-eng`, and `review-animations`.
+- `slash-media`: creator publishing workflows for social cards, cover systems, and article illustrations.
+  - Includes `guizang-social-card-skill` and `ian-xiaohei-illustrations`.
+- `slash-marketing`: product marketing, growth, SEO, CRO, ads, lifecycle, and go-to-market workflows.
+  - Includes the Marketing Skills collection.
 
 ## Repository Layout
 
@@ -17,6 +19,8 @@ plugins/            Installable plugin packages generated from skills/.
 adapters/cursor/    Cursor rule adapters and setup material.
 marketplace.json    Codex marketplace entry point.
 scripts/            Maintenance helpers.
+THIRD_PARTY_NOTICES.md
+                    Source and license notes for redistributed skills.
 ```
 
 ## Install In Codex
@@ -32,6 +36,7 @@ Then install the skill packs you want:
 ```bash
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
+codex plugin add slash-marketing@slash-skills
 ```
 
 You can install only one pack if that is all you need:
@@ -44,6 +49,10 @@ codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
 ```
 
+```bash
+codex plugin add slash-marketing@slash-skills
+```
+
 After installing, start a new Codex thread so the newly installed skills are loaded into context.
 
 For local MVP testing:
@@ -52,6 +61,7 @@ For local MVP testing:
 codex plugin marketplace add /path/to/slash-skills-subscription
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
+codex plugin add slash-marketing@slash-skills
 ```
 
 ## Update In Codex
@@ -67,6 +77,7 @@ Then reinstall the packs you use:
 ```bash
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
+codex plugin add slash-marketing@slash-skills
 ```
 
 Start a new Codex thread after reinstalling so the updated skills are loaded.
@@ -92,6 +103,8 @@ codex plugin add slash-design@slash-skills
 Included skills:
 
 - `frontend-slides`
+- `emil-design-eng`
+- `review-animations`
 
 ### `slash-media`
 
@@ -106,6 +119,42 @@ codex plugin add slash-media@slash-skills
 Included skills:
 
 - `guizang-social-card-skill`
+- `ian-xiaohei-illustrations`
+
+### `slash-marketing`
+
+Product marketing, growth strategy, CRO, SEO, ads, lifecycle, pricing, launches, and go-to-market workflows.
+
+Install:
+
+```bash
+codex plugin add slash-marketing@slash-skills
+```
+
+Included skills include:
+
+- `product-marketing`
+- `marketing-plan`
+- `marketing-ideas`
+- `copywriting`
+- `copy-editing`
+- `cro`
+- `seo-audit`
+- `ai-seo`
+- `ads`
+- `ad-creative`
+- `analytics`
+- `aso`
+- `social`
+- `emails`
+- `launch`
+- `pricing`
+- `onboarding`
+- `paywalls`
+- `customer-research`
+- `sales-enablement`
+- `revops`
+- and the rest of the Marketing Skills collection under `skills/marketing/`.
 
 ## Remove In Codex
 
@@ -114,6 +163,7 @@ Remove an installed pack:
 ```bash
 codex plugin remove slash-design
 codex plugin remove slash-media
+codex plugin remove slash-marketing
 ```
 
 Remove the marketplace source:
@@ -129,8 +179,13 @@ Cursor does not use the same plugin marketplace flow. For the MVP, copy the rule
 ```text
 .cursor/rules/slash-design.mdc
 .cursor/rules/slash-media.mdc
+.cursor/rules/slash-marketing.mdc
 .cursor/slash-skills/design/frontend-slides/
+.cursor/slash-skills/design/emil-design-eng/
+.cursor/slash-skills/design/review-animations/
 .cursor/slash-skills/media/guizang-social-card-skill/
+.cursor/slash-skills/media/ian-xiaohei-illustrations/
+.cursor/slash-skills/marketing/
 ```
 
 The Cursor rules point the agent at the local skill instructions.

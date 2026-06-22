@@ -3,15 +3,20 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-sync_skill() {
-  local src="$1"
-  local dest="$2"
+sync_pack() {
+  local line="$1"
+  local plugin="$2"
+  local source_dir="$ROOT/skills/$line"
+  local plugin_dir="$ROOT/plugins/$plugin/skills"
 
-  mkdir -p "$(dirname "$dest")"
-  rsync -a --delete --exclude .git "$src/" "$dest/"
+  mkdir -p "$plugin_dir"
+  if [[ -d "$source_dir" ]]; then
+    rsync -a --delete --exclude .git "$source_dir/" "$plugin_dir/"
+  fi
 }
 
-sync_skill "$ROOT/skills/design/frontend-slides" "$ROOT/plugins/slash-design/skills/frontend-slides"
-sync_skill "$ROOT/skills/media/guizang-social-card-skill" "$ROOT/plugins/slash-media/skills/guizang-social-card-skill"
+sync_pack "design" "slash-design"
+sync_pack "media" "slash-media"
+sync_pack "marketing" "slash-marketing"
 
 echo "Synced Slash source skills into plugin packages."
