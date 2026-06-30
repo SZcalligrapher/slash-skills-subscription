@@ -18,5 +18,6 @@ sync_pack() {
 sync_pack "design" "slash-design"
 sync_pack "media" "slash-media"
 sync_pack "marketing" "slash-marketing"
+sync_pack "product" "slash-product"
 
 echo "Synced Slash source skills into plugin packages."

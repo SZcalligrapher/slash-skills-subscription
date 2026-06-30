@@ -1,0 +1,22 @@
+{
+  "name": "slash-product",
+  "version": "0.1.0",
+  "description": "Slash product skills for App Store screenshots, product packaging, launch assets, and app presentation workflows.",
+  "author": {
+    "name": "Slash"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Slash Product",
+    "shortDescription": "App Store screenshots, product packaging, launch assets, and app presentation",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Create App Store screenshots or product presentation assets"
+    ]
+  }
+}

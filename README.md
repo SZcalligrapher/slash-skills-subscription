@@ -10,6 +10,8 @@ Slash Skills Subscription is a cross-agent skill collection. The repository keep
   - Includes `guizang-social-card-skill`, `ian-xiaohei-illustrations`, and the `li-skills` creator toolkit.
 - `slash-marketing`: product marketing, growth, SEO, CRO, ads, lifecycle, and go-to-market workflows.
   - Includes the Marketing Skills collection.
+- `slash-product`: product packaging, App Store screenshots, launch assets, and app presentation workflows.
+  - Includes `aso-appstore-screenshots`.
 
 ## Repository Layout
 
@@ -37,6 +39,7 @@ Then install the skill packs you want:
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
 codex plugin add slash-marketing@slash-skills
+codex plugin add slash-product@slash-skills
 ```
 
 You can install only one pack if that is all you need:
@@ -53,6 +56,10 @@ codex plugin add slash-media@slash-skills
 codex plugin add slash-marketing@slash-skills
 ```
 
+```bash
+codex plugin add slash-product@slash-skills
+```
+
 After installing, start a new Codex thread so the newly installed skills are loaded into context.
 
 For local MVP testing:
@@ -62,6 +69,7 @@ codex plugin marketplace add /path/to/slash-skills-subscription
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
 codex plugin add slash-marketing@slash-skills
+codex plugin add slash-product@slash-skills
 ```
 
 ## Update In Codex
@@ -78,6 +86,7 @@ Then reinstall the packs you use:
 codex plugin add slash-design@slash-skills
 codex plugin add slash-media@slash-skills
 codex plugin add slash-marketing@slash-skills
+codex plugin add slash-product@slash-skills
 ```
 
 Start a new Codex thread after reinstalling so the updated skills are loaded.
@@ -168,6 +177,20 @@ Included skills include:
 - `revops`
 - and the rest of the Marketing Skills collection under `skills/marketing/`.
 
+### `slash-product`
+
+Product packaging, App Store screenshots, launch assets, and app presentation workflows.
+
+Install:
+
+```bash
+codex plugin add slash-product@slash-skills
+```
+
+Included skills:
+
+- `aso-appstore-screenshots`
+
 ## Remove In Codex
 
 Remove an installed pack:
@@ -176,6 +199,7 @@ Remove an installed pack:
 codex plugin remove slash-design
 codex plugin remove slash-media
 codex plugin remove slash-marketing
+codex plugin remove slash-product
 ```
 
 Remove the marketplace source:
@@ -192,6 +216,7 @@ Cursor does not use the same plugin marketplace flow. For the MVP, copy the rule
 .cursor/rules/slash-design.mdc
 .cursor/rules/slash-media.mdc
 .cursor/rules/slash-marketing.mdc
+.cursor/rules/slash-product.mdc
 .cursor/slash-skills/design/frontend-slides/
 .cursor/slash-skills/design/emil-design-eng/
 .cursor/slash-skills/design/review-animations/
@@ -199,6 +224,7 @@ Cursor does not use the same plugin marketplace flow. For the MVP, copy the rule
 .cursor/slash-skills/media/ian-xiaohei-illustrations/
 .cursor/slash-skills/media/li*/
 .cursor/slash-skills/marketing/
+.cursor/slash-skills/product/aso-appstore-screenshots/
 ```
 
 The Cursor rules point the agent at the local skill instructions.

@@ -1,0 +1,15 @@
+---
+description: Use Slash Product skills for App Store screenshots, product packaging, launch assets, and app presentation workflows.
+globs:
+alwaysApply: false
+---
+
+# Slash Product
+
+Use this rule when the user asks for App Store screenshots, ASO screenshot strategy, simulator screenshot selection, app benefits, product packaging, or app launch visuals.
+
+Before acting, read the local Slash skill instructions if they are present in the project:
+
+- `.cursor/slash-skills/product/aso-appstore-screenshots/SKILL.md`
+
+Follow the referenced skill workflow. Preserve the helper scripts and assets next to `SKILL.md` when copying this adapter into a Cursor project.
