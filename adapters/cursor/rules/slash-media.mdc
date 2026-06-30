@@ -1,20 +1,25 @@
 ---
-description: Use Slash Media skills for social cards, Xiaohongshu/Rednote, WeChat covers, and creator packaging.
+description: Use Slash Media skills for social cards, Xiaohongshu/Rednote, WeChat covers, creator packaging, scripts, hooks, topics, and content workflows.
 globs:
 alwaysApply: false
 ---
 
 # Slash Media
 
-Use this rule when the user asks for Xiaohongshu/Rednote images, social card sets, WeChat Official Account covers, article thumbnails, carousel posts, screenshot-heavy product posts, or creator packaging.
+Use this rule when the user asks for Xiaohongshu/Rednote images, social card sets, WeChat Official Account covers, article thumbnails, carousel posts, screenshot-heavy product posts, creator packaging, topic strategy, video scripts, opening hooks, cover copy, content distribution, or creator workflow review.
 
 Before acting, read the local Slash skill instructions if they are present in the project:
 
 - `.cursor/slash-skills/media/guizang-social-card-skill/SKILL.md`
+- `.cursor/slash-skills/media/ian-xiaohei-illustrations/SKILL.md`
+- `.cursor/slash-skills/media/li/SKILL.md`
+- `.cursor/slash-skills/media/li-writer/SKILL.md`
+- `.cursor/slash-skills/media/li-topic/SKILL.md`
+- `.cursor/slash-skills/media/li-cover/SKILL.md`
 
 Follow the referenced skill workflow. In particular:
 
 - Treat the source content as a visual argument, not text to paste into posters.
 - Produce platform-sized image packages and verify rendered dimensions.
+- For `li-*` workflows, let the main `li` router or the specific `li-*` skill choose the creator-production path.
 - Preserve the skill's supporting files next to `SKILL.md` when copying this adapter into a Cursor project.
-

@@ -1,7 +1,7 @@
 {
   "name": "slash-media",
   "version": "0.1.0",
-  "description": "Slash media skills for social cards, Xiaohongshu carousels, WeChat covers, and creator packaging workflows.",
+  "description": "Slash media skills for social cards, Xiaohongshu carousels, WeChat covers, creator packaging, scripts, hooks, topics, and content production workflows.",
   "author": {
     "name": "Slash"
   },
@@ -9,14 +9,14 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Slash Media",
-    "shortDescription": "Social cards, Xiaohongshu images, and WeChat cover systems",
+    "shortDescription": "Social images, article illustrations, scripts, hooks, topics, and creator workflows",
     "category": "Creativity",
     "capabilities": [
       "Interactive",
       "Write"
     ],
     "defaultPrompt": [
-      "Turn content into a polished social image package"
+      "Turn content into a polished creator publishing package"
     ]
   }
 }

@@ -6,8 +6,8 @@ Slash Skills Subscription is a cross-agent skill collection. The repository keep
 
 - `slash-design`: design, visual systems, animation review, and HTML slide decks.
   - Includes `frontend-slides`, `emil-design-eng`, and `review-animations`.
-- `slash-media`: creator publishing workflows for social cards, cover systems, and article illustrations.
-  - Includes `guizang-social-card-skill` and `ian-xiaohei-illustrations`.
+- `slash-media`: creator publishing workflows for social cards, cover systems, article illustrations, and Chinese creator content production.
+  - Includes `guizang-social-card-skill`, `ian-xiaohei-illustrations`, and the `li-skills` creator toolkit.
 - `slash-marketing`: product marketing, growth, SEO, CRO, ads, lifecycle, and go-to-market workflows.
   - Includes the Marketing Skills collection.
 
@@ -108,7 +108,7 @@ Included skills:
 
 ### `slash-media`
 
-Creator publishing workflows for social cards, Xiaohongshu/Rednote image sets, WeChat covers, and article thumbnails.
+Creator publishing workflows for social cards, Xiaohongshu/Rednote image sets, WeChat covers, article thumbnails, topic strategy, scripts, hooks, distribution, and content review.
 
 Install:
 
@@ -120,6 +120,18 @@ Included skills:
 
 - `guizang-social-card-skill`
 - `ian-xiaohei-illustrations`
+- `li`
+- `li-writer`
+- `li-topic`
+- `li-recorder`
+- `li-opening`
+- `li-cover`
+- `li-analyzer`
+- `li-distribute`
+- `li-transcript`
+- `li-prd`
+- `li-prd-review`
+- and the rest of the `li-skills` creator toolkit under `skills/media/`.
 
 ### `slash-marketing`
 
@@ -185,6 +197,7 @@ Cursor does not use the same plugin marketplace flow. For the MVP, copy the rule
 .cursor/slash-skills/design/review-animations/
 .cursor/slash-skills/media/guizang-social-card-skill/
 .cursor/slash-skills/media/ian-xiaohei-illustrations/
+.cursor/slash-skills/media/li*/
 .cursor/slash-skills/marketing/
 ```
 

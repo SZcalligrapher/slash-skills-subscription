@@ -74,3 +74,31 @@ SOFTWARE.
 - License found in installed skill copy: not found.
 
 Before broad redistribution, verify the upstream license or obtain permission from the upstream author.
+
+## jiangjiax/li-skills
+
+- Source: https://github.com/jiangjiax/li-skills
+- Imported commit: `622adb757fe208804a4c0d5b9b305f0de2c7ad94`
+- Included skills: the full `li-*` creator toolkit.
+- License found in source repo: Creative Commons Attribution-NonCommercial 4.0 International.
+
+```text
+Creative Commons Attribution-NonCommercial 4.0 International
+
+Copyright (c) 2026 li-skills contributors
+
+You are free to:
+  Share — copy and redistribute the material in any medium or format
+  Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+  Attribution — You must give appropriate credit, provide a link to the license,
+  and indicate if changes were made.
+
+  NonCommercial — You may not use the material for commercial purposes.
+
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+
+Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+```
